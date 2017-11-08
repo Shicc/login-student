@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>注册</title>
+</head>
+<body>
+<form th:action="@{/register}" th:object="${student}" method="post">
+    <table>
+        <tr>
+            <td>用户名：</td>
+            <td><input type="text" th:field="*{name}" /></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input type="password" th:field="*{password}"/></td>
+            <td><button type="submit">注册</button></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
